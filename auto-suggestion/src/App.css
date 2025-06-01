@@ -1,0 +1,42 @@
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+}
+
+.container input {
+  padding: 7px;
+  width: 350px;
+  font-size: 15px;
+}
+
+.container ul {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.container li {
+  padding: 7px;
+}
+
+.container li:hover,
+.container li.active {
+  background-color: #f0f0f0;
+}
