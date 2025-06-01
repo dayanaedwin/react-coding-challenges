@@ -28,7 +28,7 @@ export const Products = () => {
             <div className="pagination-container">
                 {currentPage !== 0 && <button onClick={() => setCurrentPage(prev => prev - 1)}>⬅️</button>}
                 {Array.from({ length: PAGE_SIZE }, (_, i) => i).map(item => (
-                    <button key={item } onClick={() => setCurrentPage(item)}>{item + 1}</button>
+                    <button className={`${currentPage === item ? 'selected-page' : ''}`} key={item } onClick={() => setCurrentPage(item)}>{item + 1}</button>
                 ))}
                 {currentPage !== PAGE_SIZE && <button onClick={() => setCurrentPage(prev => prev + 1)}>➡️</button>}
             </div>
