@@ -1,0 +1,38 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 400px;
+  padding: 5px;
+}
+
+.suggesion-container {
+  width: 400px;
+  gap: 2px;
+  max-height: 400px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.suggesion-container h5 {
+  display: block;
+  margin: 0;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.suggesion-container h5:hover {
+  background-color: azure;  
+}
